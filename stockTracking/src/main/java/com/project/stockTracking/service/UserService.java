@@ -49,6 +49,15 @@ public class UserService {
     public void deleteUser(Long id) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("User not found"));
-        userRepository.delete(user);
+        user.setIsDeleted(true);
+        userRepository.save(user);
+    }
+
+    public Optional<User> findByUsernameAndPassword(String username, String password) {
+        return userRepository.findByUsernameAndPasswordAndIsDeletedFalse(username, password);
+    }
+
+    public List<User> getAllActiveUsers() {
+        return userRepository.findByIsDeletedFalse();
     }
 }

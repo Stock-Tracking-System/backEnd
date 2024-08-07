@@ -19,7 +19,7 @@ public class UserController {
 
     @GetMapping
     public List<User> getAllUsers() {
-        return userService.getAllUsers();
+        return userService.getAllActiveUsers();
     }
 
     @GetMapping("/{id}")
@@ -46,5 +46,15 @@ public class UserController {
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody User user) {
+        Optional<User> foundUser = userService.findByUsernameAndPassword(user.getUsername(), user.getPassword());
+        if (foundUser.isPresent()) {
+            return ResponseEntity.ok(foundUser.get());
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid username or password");
+        }
     }
 }
