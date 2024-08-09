@@ -12,7 +12,7 @@ import com.project.stockTracking.entity.Warehouse;
 import com.project.stockTracking.service.WarehouseService;
 
 import java.util.List;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/api/warehouses")
