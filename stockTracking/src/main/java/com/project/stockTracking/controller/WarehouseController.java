@@ -2,6 +2,8 @@ package com.project.stockTracking.controller;
 
 
 
+import com.project.stockTracking.dto.WarehouseDTO;
+import com.project.stockTracking.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,10 +27,19 @@ public class WarehouseController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Warehouse> getWarehouseById(@PathVariable Long id) {
-        Optional<Warehouse> warehouse = warehouseService.getWarehouseById(id);
-        return warehouse.map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
+    public ResponseEntity<WarehouseDTO> getWarehouseById(@PathVariable Long id) {
+        Warehouse warehouse = warehouseService.getWarehouseById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Warehouse not found"));
+
+        WarehouseDTO warehouseDTO = new WarehouseDTO();
+        warehouseDTO.setWarehouseName(warehouse.getWarehouseName());
+        warehouseDTO.setWarehouseCapacity(warehouse.getWarehouseCapacity());
+        warehouseDTO.setWarehouseManager(warehouse.getWarehouseManager());
+        warehouseDTO.setWarehouseAddress(warehouse.getWarehouseAddress());
+        warehouseDTO.setDescription(warehouse.getDescription());
+        warehouseDTO.setDate(warehouse.getDate());
+
+        return ResponseEntity.ok(warehouseDTO);
     }
 
     @PostMapping

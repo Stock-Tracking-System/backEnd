@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import com.project.stockTracking.entity.Warehouse;
 import com.project.stockTracking.repository.WarehouseRepository;
 import com.project.stockTracking.exception.ResourceNotFoundException;
+import org.springframework.transaction.annotation.Transactional;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -23,10 +25,12 @@ public class WarehouseService {
         return warehouseRepository.findById(id);
     }
 
+    @Transactional
     public Warehouse createWarehouse(Warehouse warehouse) {
         return warehouseRepository.save(warehouse);
     }
 
+    @Transactional
     public Warehouse updateWarehouse(Long id, Warehouse warehouseDetails) {
         Warehouse warehouse = warehouseRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Warehouse not found"));
@@ -46,9 +50,11 @@ public class WarehouseService {
         return warehouseRepository.save(warehouse);
     }
 
+    @Transactional
     public void deleteWarehouse(Long id) {
         Warehouse warehouse = warehouseRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Warehouse not found"));
-        warehouseRepository.delete(warehouse);
+        warehouse.setIsDeleted(true);
+        warehouseRepository.save(warehouse);
     }
 }

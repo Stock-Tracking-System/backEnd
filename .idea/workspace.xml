@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41c58593-785b-45f5-9343-469f2bf30d94" name="Changes" comment="Login kısmı">
+    <list default="true" id="41c58593-785b-45f5-9343-469f2bf30d94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/controller/WarehouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/controller/WarehouseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/controller/WarehouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/controller/WarehouseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +137,8 @@
       <workItem from="1722928689367" duration="19301000" />
       <workItem from="1723038299479" duration="3990000" />
       <workItem from="1723043758592" duration="1815000" />
-      <workItem from="1723048151443" duration="1117000" />
+      <workItem from="1723048151443" duration="16757000" />
+      <workItem from="1723204802981" duration="442000" />
     </task>
     <task id="LOCAL-00001" summary="Controller, Service, Repository ve Entity classları eklendi.">
       <option name="closed" value="true" />
@@ -166,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723043477748</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login kısmı">
+      <option name="closed" value="true" />
+      <created>1723059452404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723059452404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
