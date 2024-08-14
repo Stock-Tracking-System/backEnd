@@ -37,7 +37,7 @@ public class WarehouseController {
         warehouseDTO.setWarehouseManager(warehouse.getWarehouseManager());
         warehouseDTO.setWarehouseAddress(warehouse.getWarehouseAddress());
         warehouseDTO.setDescription(warehouse.getDescription());
-        warehouseDTO.setDate(warehouse.getDate());
+
 
         return ResponseEntity.ok(warehouseDTO);
     }

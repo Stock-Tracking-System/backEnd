@@ -23,12 +23,11 @@ public class WarehouseProduct {
     private Product product;
 
     private Integer totalAmount;
-    private LocalDateTime lastUpdated;
     private LocalDateTime createdDate;
     private Integer createdBy;
     private LocalDateTime updatedDate;
     private Integer updatedBy;
-    private Boolean isDeleted;
+
 
 }
 

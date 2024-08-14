@@ -7,7 +7,6 @@ import com.project.stockTracking.repository.WarehouseRepository;
 import com.project.stockTracking.exception.ResourceNotFoundException;
 import org.springframework.transaction.annotation.Transactional;
 
-
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +39,7 @@ public class WarehouseService {
         warehouse.setWarehouseManager(warehouseDetails.getWarehouseManager());
         warehouse.setWarehouseAddress(warehouseDetails.getWarehouseAddress());
         warehouse.setDescription(warehouseDetails.getDescription());
-        warehouse.setDate(warehouseDetails.getDate());
+        warehouse.setOccupancyRate(warehouseDetails.getOccupancyRate());
         warehouse.setCreatedDate(warehouseDetails.getCreatedDate());
         warehouse.setCreatedBy(warehouseDetails.getCreatedBy());
         warehouse.setUpdatedDate(warehouseDetails.getUpdatedDate());

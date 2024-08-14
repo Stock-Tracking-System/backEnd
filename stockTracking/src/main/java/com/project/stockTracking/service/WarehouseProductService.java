@@ -34,12 +34,11 @@ public class WarehouseProductService {
         warehouseProduct.setWarehouse(warehouseProductDetails.getWarehouse());
         warehouseProduct.setProduct(warehouseProductDetails.getProduct());
         warehouseProduct.setTotalAmount(warehouseProductDetails.getTotalAmount());
-        warehouseProduct.setLastUpdated(warehouseProductDetails.getLastUpdated());
         warehouseProduct.setCreatedDate(warehouseProductDetails.getCreatedDate());
         warehouseProduct.setCreatedBy(warehouseProductDetails.getCreatedBy());
         warehouseProduct.setUpdatedDate(warehouseProductDetails.getUpdatedDate());
         warehouseProduct.setUpdatedBy(warehouseProductDetails.getUpdatedBy());
-        warehouseProduct.setIsDeleted(warehouseProductDetails.getIsDeleted());
+
 
         return warehouseProductRepository.save(warehouseProduct);
     }

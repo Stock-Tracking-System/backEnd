@@ -33,12 +33,8 @@ public class ProductStockSummaryService {
 
         productStockSummary.setProduct(productStockSummaryDetails.getProduct());
         productStockSummary.setTotalAmount(productStockSummaryDetails.getTotalAmount());
-        productStockSummary.setLastUpdated(productStockSummaryDetails.getLastUpdated());
-        productStockSummary.setCreatedDate(productStockSummaryDetails.getCreatedDate());
-        productStockSummary.setCreatedBy(productStockSummaryDetails.getCreatedBy());
         productStockSummary.setUpdatedDate(productStockSummaryDetails.getUpdatedDate());
-        productStockSummary.setUpdatedBy(productStockSummaryDetails.getUpdatedBy());
-        productStockSummary.setIsDeleted(productStockSummaryDetails.getIsDeleted());
+
 
         return productStockSummaryRepository.save(productStockSummary);
     }

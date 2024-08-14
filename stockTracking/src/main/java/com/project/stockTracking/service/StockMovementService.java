@@ -36,8 +36,6 @@ public class StockMovementService {
         stockMovement.setMovementType(stockMovementDetails.getMovementType());
         stockMovement.setAmount(stockMovementDetails.getAmount());
         stockMovement.setDescription(stockMovementDetails.getDescription());
-        stockMovement.setDate(stockMovementDetails.getDate());
-        stockMovement.setUser(stockMovementDetails.getUser());
         stockMovement.setCreatedDate(stockMovementDetails.getCreatedDate());
         stockMovement.setCreatedBy(stockMovementDetails.getCreatedBy());
         stockMovement.setUpdatedDate(stockMovementDetails.getUpdatedDate());

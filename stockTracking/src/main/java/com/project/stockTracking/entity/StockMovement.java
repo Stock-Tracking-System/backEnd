@@ -25,11 +25,9 @@ public class StockMovement {
     private String movementType;
     private Integer amount;
     private String description;
-    private LocalDateTime date;
 
-    @ManyToOne
-    @JoinColumn(name = "userID")
-    private User user;
+
+
 
     private LocalDateTime createdDate;
     private Integer createdBy;

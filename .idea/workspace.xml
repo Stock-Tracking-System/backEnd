@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41c58593-785b-45f5-9343-469f2bf30d94" name="Changes" comment="">
+    <list default="true" id="41c58593-785b-45f5-9343-469f2bf30d94" name="Changes" comment="Lombok ile optimizasyon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/controller/WarehouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/controller/WarehouseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/ProductStockSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/ProductStockSummary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/StockMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/StockMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/WarehouseProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/WarehouseProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductStockSummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductStockSummaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/StockMovementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/StockMovementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/controller/WarehouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/controller/WarehouseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductStockSummary.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductStockSummary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/StockMovement.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/StockMovement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Warehouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Warehouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/WarehouseProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/WarehouseProduct.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +101,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.tailwindcss&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -138,7 +153,9 @@
       <workItem from="1723038299479" duration="3990000" />
       <workItem from="1723043758592" duration="1815000" />
       <workItem from="1723048151443" duration="16757000" />
-      <workItem from="1723204802981" duration="442000" />
+      <workItem from="1723204802981" duration="4704000" />
+      <workItem from="1723210956131" duration="122000" />
+      <workItem from="1723445408242" duration="18347000" />
     </task>
     <task id="LOCAL-00001" summary="Controller, Service, Repository ve Entity classları eklendi.">
       <option name="closed" value="true" />
@@ -180,7 +197,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723059452404</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Depo işlemleri">
+      <option name="closed" value="true" />
+      <created>1723205366254</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723205366254</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Lombok ile optimizasyon">
+      <option name="closed" value="true" />
+      <created>1723210770971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723210770971</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +234,12 @@
     <MESSAGE value="Controller, Service, Repository ve Entity classları eklendi." />
     <MESSAGE value="Login kısmı yapıldı" />
     <MESSAGE value="Login kısmı" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login kısmı" />
+    <MESSAGE value="Depo işlemleri" />
+    <MESSAGE value="Lombok ile optimizasyon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lombok ile optimizasyon" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

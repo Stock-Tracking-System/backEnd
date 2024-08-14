@@ -48,6 +48,15 @@ public class User {
     @Column(name = "is_deleted")
     private Boolean isDeleted;
 
-    // Getters and Setters
+    @PrePersist
+    protected void onCreate() {
+        createdDate = LocalDateTime.now();
+        updatedDate = LocalDateTime.now();
+    }
+
+    @PreUpdate
+    protected void onUpdate() {
+        updatedDate = LocalDateTime.now();
+    }
 
 }

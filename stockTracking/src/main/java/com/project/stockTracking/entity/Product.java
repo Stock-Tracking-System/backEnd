@@ -28,11 +28,12 @@ public class Product {
     private String currency;
     private String productDescription;
     private String barcodeNumber;
-    private LocalDateTime date;
+    private BigDecimal volumePerUnit;
     private LocalDateTime createdDate;
     private Integer createdBy;
     private LocalDateTime updatedDate;
     private Integer updatedBy;
     private Boolean isDeleted;
+
 
 }

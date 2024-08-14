@@ -40,7 +40,7 @@ public class ProductService {
         product.setCurrency(productDetails.getCurrency());
         product.setProductDescription(productDetails.getProductDescription());
         product.setBarcodeNumber(productDetails.getBarcodeNumber());
-        product.setDate(productDetails.getDate());
+        product.setVolumePerUnit(productDetails.getVolumePerUnit());
         product.setCreatedDate(productDetails.getCreatedDate());
         product.setCreatedBy(productDetails.getCreatedBy());
         product.setUpdatedDate(productDetails.getUpdatedDate());
