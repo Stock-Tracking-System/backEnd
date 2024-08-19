@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @Entity
-public class Warehouse {
+public class Warehouse extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,10 +21,12 @@ public class Warehouse {
     private String warehouseAddress;
     private String description;
     private BigDecimal occupancyRate;
-    private LocalDateTime createdDate;
+
     private Integer createdBy;
-    private LocalDateTime updatedDate;
+
     private Integer updatedBy;
-    private Boolean isDeleted;
+
+    @Column(name = "is_deleted", nullable = false)
+    private Boolean isDeleted = false;
 
 }

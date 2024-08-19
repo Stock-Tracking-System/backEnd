@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41c58593-785b-45f5-9343-469f2bf30d94" name="Changes" comment="Lombok ile optimizasyon">
+    <list default="true" id="41c58593-785b-45f5-9343-469f2bf30d94" name="Changes" comment="Login kısmı">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/controller/WarehouseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/controller/WarehouseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/ProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/ProductCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/ProductStockSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/ProductStockSummary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/StockMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/StockMovement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Warehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/Warehouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/WarehouseProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/entity/WarehouseProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductStockSummaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/ProductStockSummaryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/StockMovementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/StockMovementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/service/WarehouseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/java/com/project/stockTracking/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/controller/WarehouseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/controller/WarehouseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductCategory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductStockSummary.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/ProductStockSummary.class" afterDir="false" />
@@ -26,6 +24,11 @@
       <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Warehouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/Warehouse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/WarehouseProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/entity/WarehouseProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/ProductStockSummaryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/ProductStockSummaryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/StockMovementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/StockMovementService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/stockTracking/target/classes/com/project/stockTracking/service/WarehouseService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +74,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Stock-Tracking-System/backEnd.git&quot;,
-    &quot;accountId&quot;: &quot;a0590048-b33b-43ab-b19e-9a44fb7f2139&quot;
+    &quot;accountId&quot;: &quot;5e12c0ba-0efd-42e3-bc4f-f6f0b6c56a40&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -85,6 +88,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.StockTrackingApplication.executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -124,14 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

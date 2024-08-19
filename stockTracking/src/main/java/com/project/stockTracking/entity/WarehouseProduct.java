@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @Entity
-public class WarehouseProduct {
+public class WarehouseProduct extends Auditable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,9 +23,9 @@ public class WarehouseProduct {
     private Product product;
 
     private Integer totalAmount;
-    private LocalDateTime createdDate;
+
     private Integer createdBy;
-    private LocalDateTime updatedDate;
+
     private Integer updatedBy;
 
 

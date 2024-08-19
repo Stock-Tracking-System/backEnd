@@ -4,12 +4,12 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
+
 
 @Setter
 @Getter
 @Entity
-public class StockMovement {
+public class StockMovement extends Auditable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -29,10 +29,12 @@ public class StockMovement {
 
 
 
-    private LocalDateTime createdDate;
+
     private Integer createdBy;
-    private LocalDateTime updatedDate;
+
     private Integer updatedBy;
-    private Boolean isDeleted;
+
+    @Column(name = "is_deleted", nullable = false)
+    private Boolean isDeleted = false;
 
 }

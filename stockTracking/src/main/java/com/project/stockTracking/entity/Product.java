@@ -5,12 +5,12 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+
 
 @Setter
 @Getter
 @Entity
-public class Product {
+public class Product extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -29,11 +29,13 @@ public class Product {
     private String productDescription;
     private String barcodeNumber;
     private BigDecimal volumePerUnit;
-    private LocalDateTime createdDate;
+
     private Integer createdBy;
-    private LocalDateTime updatedDate;
+
     private Integer updatedBy;
-    private Boolean isDeleted;
+
+    @Column(name = "is_deleted", nullable = false)
+    private Boolean isDeleted = false;
 
 
 }
